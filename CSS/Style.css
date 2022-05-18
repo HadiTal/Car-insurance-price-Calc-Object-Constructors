@@ -1,0 +1,419 @@
+    body {
+        background-image: linear-gradient( 64.3deg, rgba(254, 122, 152, 0.81) 17.7%, rgba(255, 206, 134, 1) 64.7%, rgba(172, 253, 163, 0.64) 112.1%);
+        direction: rtl;
+    }
+    
+    .display-form-main {
+        display: block;
+    }
+    
+    .hide-form-main {
+        display: none
+    }
+    
+    @font-face {
+        font-family: font-dana;
+        src: url(../CSS/font-2/dana-demibold.eot), url(../CSS/font-2/dana-demibold.otf), url(../CSS/font-2/dana-demibold.svg), url(../CSS/font-2/dana-demibold.ttf), url(../CSS/font-2/dana-demibold.woff);
+    }
+    
+    @font-face {
+        font-family: font-iransSnas;
+        src: url(../CSS/font-3/IRANSans_Light/fonts/IRANSans_Light.eot), url(../CSS/font-3/IRANSans_Light/fonts/IRANSans_Light.otf), url(../CSS/font-3/IRANSans_Light/fonts/IRANSans_Light.svg), url(../CSS/font-3/IRANSans_Light/fonts/IRANSans_Light.ttf), url(../CSS/font-3/IRANSans_Light/fonts/IRANSans_Light.woff);
+    }
+    
+    @font-face {
+        font-family: font-yekan;
+        src: url(../CSS/fonts/IRANYekanLight.eot), url(../CSS/fonts/IRANYekanLight.otf), url(../CSS/fonts/IRANYekanLight.svg), url(../CSS/fonts/IRANYekanLight.ttf), url(../CSS/fonts/IRANYekanLight.woff);
+    }
+    
+    * {
+        padding: 0;
+    }
+    
+    .main-section {
+        width: 100%;
+        height: 100%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        cursor: pointer;
+    }
+    
+    .container-form {
+        width: 400px;
+        border-radius: 10px;
+        background-color: white;
+    }
+    
+    .continer-height-form-spinner {
+        height: 570px;
+    }
+    
+    .container-form-height-error {
+        height: 550px;
+    }
+    
+    .container-form-height-normall {
+        height: 500px;
+    }
+    
+    .main-section {
+        display: flex;
+    }
+    
+    .top {
+        background-color: #4790D5;
+        width: 100%;
+        height: 3em;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    
+    .top {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: font-iransSnas;
+        color: white;
+        font-size: 1em;
+        word-spacing: 5px;
+    }
+    
+    .content-car {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .selcet-car-container {
+        width: 90%;
+        height: 4em;
+        border-bottom: solid 1px#222f3e;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start
+    }
+    
+    .select-year-create {
+        width: 90%;
+        height: 4em;
+        border-bottom: solid 1px#222f3e;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    
+    .text-model,
+    .text-year-create {
+        font-family: font-iransSnas;
+        font-size: 0.9em;
+        color: #341f97
+    }
+    
+    select {
+        width: 100%;
+        height: 2em;
+        font-family: font-iransSnas;
+        border: none;
+        outline: none;
+        border-radius: 50px;
+    }
+    
+    option {
+        background-color: #f1f2f6;
+    }
+    
+    .conatiner-radio {
+        width: 100%;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .text-bime {
+        padding-right: 1em;
+        font-family: font-iransSnas;
+        font-size: 1em;
+    }
+    
+    .radio-1,
+    .radio-2 {
+        padding-right: 1em;
+        height: 20em;
+    }
+    
+    .text-radio {
+        font-family: font-iransSnas;
+        font-size: 0.9em;
+    }
+    
+    .container-button {
+        width: 100%;
+        height: 5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    input[type=submit] {
+        width: 90%;
+        padding: 0.7em;
+        border-radius: 5px;
+        outline: none;
+        font-family: font-iransSnas;
+        background-color: #3742fa;
+        color: white;
+        border: solid 1px transparent;
+        font-size: 1em;
+    }
+    
+    .error {
+        width: 100%;
+        height: 50px;
+        background-color: rgb(250, 236, 232);
+        color: red;
+        border: solid 1px red;
+        font-family: font-iransSnas;
+        font-size: 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .result {
+        width: 100%;
+        height: 150px;
+        background-color: #ccc;
+    }
+    
+    .factor-container {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        border: solid 1px black;
+    }
+    
+    .display-factor-container {
+        display: flex;
+    }
+    
+    .hide-factor-container {
+        display: none;
+    }
+    
+    .container-result {
+        width: 340px;
+        height: 380px;
+        background-color: white;
+        border-radius: 10px;
+        position: relative;
+    }
+    
+    .display-container-result {
+        display: flex;
+    }
+    
+    .hide-container-result {
+        display: none;
+    }
+    
+    .container-result .tittle {
+        width: 100%;
+        height: 50px;
+        position: absolute;
+        background-color: #0be881;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: font-yekan;
+        color: white;
+        font-weight: bolder;
+        flex-direction: row-reverse;
+    }
+    
+    .text-tittle {
+        padding: 1em;
+    }
+    
+    .btn-close-tittle {
+        font-size: 2em;
+        width: 20px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0.5em;
+    }
+    
+    .bottom {
+        bottom: 0px;
+        position: absolute;
+        width: 100%;
+        height: 60px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .btn-bottom {
+        width: 90%;
+        height: 40px;
+        font-family: font-iransSnas;
+        background-color: #694BE1;
+        outline: none;
+        border-radius: 5px;
+        border: solid 1px transparent;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1em;
+        cursor: pointer;
+    }
+    
+    .btn-pay {
+        font-size: 2em;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+        flex-direction: row-reverse;
+    }
+    
+    .content-factor {
+        width: 100%;
+        display: flex;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 55px
+    }
+    
+    .iteam {
+        width: 100%;
+        height: 3em;
+        margin: 0.5em 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .iteam-tittle {
+        padding: 0.5em;
+        font-family: font-iransSnas;
+    }
+    
+    .value {
+        font-family: font-iransSnas;
+    }
+    
+    .conatiner-spiner {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .hide-spiner {
+        display: none;
+    }
+    
+    img {
+        width: 35%;
+    }
+    
+    @media only screen and (max-width: 393px) {
+        .container-form {
+            width: 350px;
+            border-radius: 10px;
+            background-color: white;
+        }
+        .container-result {
+            width: 350px;
+            height: 380px;
+            background-color: white;
+            border-radius: 10px;
+            position: relative;
+        }
+        .text-tittle {
+            font-size: 1em;
+        }
+    }
+    
+    @media only screen and (max-width: 360px) {
+        .container-form {
+            width: 350px;
+            border-radius: 10px;
+            background-color: white;
+        }
+        .container-result {
+            width: 350px;
+            height: 380px;
+            background-color: white;
+            border-radius: 10px;
+            position: relative;
+        }
+        .text-tittle {
+            font-size: 1em;
+        }
+    }
+    
+    @media only screen and (max-width: 320px) {
+        .container-form {
+            width: 300px;
+            border-radius: 10px;
+            background-color: white;
+        }
+        .container-result {
+            width: 300px;
+            height: 380px;
+            background-color: white;
+            border-radius: 10px;
+            position: relative;
+        }
+        .text-tittle {
+            font-size: 1em;
+        }
+    }
+    
+    @media only screen and (max-width: 280px) {
+        .container-form {
+            width: 270px;
+            border-radius: 10px;
+            background-color: white;
+        }
+        .container-result {
+            width: 270px;
+            height: 380px;
+            background-color: white;
+            border-radius: 10px;
+            position: relative;
+        }
+        .text-tittle {
+            font-size: 0.9em;
+        }
+    }

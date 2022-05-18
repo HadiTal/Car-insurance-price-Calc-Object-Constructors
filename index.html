@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel='stylesheet' type="text/css" href="css/Style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="main-section">
+
+        <div class="factor-container">
+            <section class="container-result">
+                <div class="tittle">
+                    <h1 class="text-tittle">خلاصه فاکتور محاسبه قیمت بیمه </h1>
+                    <span class="btn-close-tittle">
+                        <i class="fa-solid fa-xmark"></i>
+                    </span>
+                </div>
+                <div class="content-factor">
+                    <div class="iteam">
+                        <p class="iteam-tittle">مدل خودرو:</p>
+                        <p class="value" id="neameCar"></p>
+                    </div>
+                    <div class="iteam">
+                        <p class="iteam-tittle">سال ساخت:</p>
+                        <p class="value" id="yearCreate"></p>
+                    </div>
+                    <div class="iteam">
+                        <p class="iteam-tittle">نوع بیمه:</p>
+                        <p class="value" id="typeBime"></p>
+                    </div>
+                    <div class="iteam">
+                        <p class="iteam-tittle">قیمت نهایی:</p>
+                        <p class="value" id="piceElement">12525</p>
+                        <p class="iteam-tittle">تومان</p>
+                    </div>
+                </div>
+
+                <div class="bottom">
+                    <button class="btn-bottom">پرداخت<span  class="btn-pay"><i class="fa-brands fa-apple-pay"></i></span></button>
+                </div>
+            </section>
+
+        </div>
+        <section class="container-form">
+            <form>
+                <div class="top">
+                    <h1>محاسبه آنلاین قیمت بیمه خودرو</h1>
+                </div>
+                <!-- <div class="text">لطفا همه مقادیر فیلد را به درستی وارد کنید</div> -->
+
+                <div class="content-car">
+
+                    <div class="selcet-car-container">
+
+                        <div><label class="text-model">مدل خودرو:</label></div>
+
+                        <select id="select">
+                            <option value="">-انتخاب-</option>
+                            <option value="1">پراید</option>
+                            <option value="2">اپتیما</option>
+                            <option value="3">پورشه</option>
+                        </select>
+
+                    </div>
+                    <div class="select-year-create">
+                        <div><label class="text-year-create">سال ساخت:</label></div>
+                        <select id="year">
+                         
+                        </select>
+                    </div>
+                </div>
+                <div class="content-option">
+                    <div class="conatiner-radio">
+                        <h1 class="text-bime">نوع بیمه</h1>
+                        <div class="radio-1">
+                            <label class="text-radio">ساده-شخص ثالث</label>
+                            <input type="radio" name="bime" checked value="basic" class="firsr-radio" />
+                        </div>
+                        <div class="radio-2">
+                            <label class="text-radio">کامل-شخص ثالث با بیمه بدنه </label>
+
+                            <input type="radio" name="bime" value="complete" class="bimeSecend" />
+                        </div>
+                    </div>
+                </div>
+                <div class="conatiner-spiner hide-spiner">
+
+                    <img src='images/spinner.gif' />
+
+                </div>
+                <div class="container-button">
+                    <input type="submit" value="محاسبه قیمت"></input>
+                </div>
+            </form>
+        </section>
+    </section>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
